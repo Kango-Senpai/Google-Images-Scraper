@@ -1,9 +1,9 @@
 import os
-import os.path
+from os.path import exists
 
-if not path.exists("cache/"):
+if not exists("cache/"):
     os.mkdir("cache")
 
-if not path.exists("Resources/"):
+if not exists("Resources/"):
     print("\033[31mResources cannot be found! Reinstall!")
     exit()
