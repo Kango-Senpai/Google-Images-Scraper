@@ -1,3 +1,4 @@
+import startup
 import utils2
 from dir_helper import cache_size
 

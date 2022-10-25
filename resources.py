@@ -5,6 +5,6 @@ class LogFile:
     path = ""
 
 os.chdir("Resources")
-DefaultImage.path = os.getcwd() + "\\default.png"
-LogFile.path = os.getcwd() + "\\log.txt"
+DefaultImage.path = os.getcwd() + "/default.png"
+LogFile.path = os.getcwd() + "/log.txt"
 os.chdir("..")
