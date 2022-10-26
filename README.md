@@ -3,11 +3,11 @@ Kirkwood Intro to Programming Logic Midterm Assignment
 ######################################################
 
 First, clone the repository:
-    git clone https://github.com/Kango-Senpai/Google-Images-Scraper
+    Run "git clone https://github.com/Kango-Senpai/Google-Images-Scraper"
 
 This project requires some dependencies, namely;
-    beautifulsoup4
-    matplotlib
+    beautifulsoup4,
+    matplotlib,
     opencv-python
 
     Option 1 : Run setup script
@@ -23,4 +23,4 @@ This project requires some dependencies, namely;
         Repeat for each required dependency
 
 The entry point of this project is "menu.py"
-Once all dependencies are installed, simply run the file from the terminal
+Once all dependencies are installed, simply run the file from the terminal.
