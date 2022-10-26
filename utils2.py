@@ -5,7 +5,7 @@ from random import randint as rnd
 from resources import LogFile
 def start_log():
     with open(LogFile.path,'a') as log_file:
-        log_file.write(f"Program started at {time.asctime()}\n")
+        log_file.write(f"\nProgram started at {time.asctime()}\n")
 
 def log(message):
     with open(LogFile.path,'a') as log_file:
