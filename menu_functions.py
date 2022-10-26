@@ -20,14 +20,18 @@ def search_and_display():
     window.gallery_rgb(images)
 
 def show_history():
-    images = []
-    dir_helper.enter_cache()
-    current_dir_listing = os.scandir(os.getcwd())
-    for entry in current_dir_listing:
-        if entry.name.endswith(".png"):
-            images.append(entry.name)
-    images = utils2.slim_list(images,15)
-    print("Close all windows to continue...")
-    utils2.log("History was accessed.")
-    dir_helper.exit_cache()
-    window.gallery_rgb(images)
+    if dir_helper.cache_size() > 0:
+        images = []
+        dir_helper.enter_cache()
+        current_dir_listing = os.scandir(os.getcwd())
+        for entry in current_dir_listing:
+            if entry.name.endswith(".png"):
+                images.append(entry.name)
+        images = utils2.slim_list(images,15)
+        print("Close all windows to continue...")
+        utils2.log("History was accessed.")
+        dir_helper.exit_cache()
+        window.gallery_rgb(images)
+    else:
+        print("\033[36mHistory is blank\033[37m")
+        input("ENTER")
